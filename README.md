@@ -4,6 +4,9 @@ A simple WordPress boilerplate theme built on Foundation 5, utilising Bower.js a
 
 ## Getting Started
 
+* Clone the repository to your machine:
+```git clone git@github.com:danielhomer/wp-foundation-boilerplate.git```
+
 * ```npm install```
 * ```bower install```
 * ```grunt```
