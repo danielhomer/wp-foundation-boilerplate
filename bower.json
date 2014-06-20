@@ -1,0 +1,20 @@
+{
+  "name": "wp-foundation-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Daniel Homer <danielhomer@me.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.2.3",
+    "jquery": "~1.11.0"
+  }
+}
