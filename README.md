@@ -1,12 +1,11 @@
 # WP Foundation Boilerplate
 
-A simple WordPress boilerplate theme built on Foundation 5, utilising Bower.js and Grunt.
+A simple WordPress boilerplate theme built on Foundation 5 with Bower.js and Grunt.
 
 ## Getting Started
 
 * Clone the repository to your machine:
 ```git clone git@github.com:danielhomer/wp-foundation-boilerplate.git```
-
 * ```npm install```
 * ```bower install```
 * ```grunt```
@@ -19,10 +18,9 @@ A simple WordPress boilerplate theme built on Foundation 5, utilising Bower.js a
 
 ### Scripts
 
-* **vendor.min.js** Contains jQuery, Foundation, Modernizr and some other dependencies, loaded in the header of every page
-
+* **jquery.min.js** Minfied jQuery, loaded in the header of every page
+* **vendor.min.js** Contains Foundation, Modernizr and some other dependencies, loaded in the footer of every page
 * **home.min.js** Loaded in the footer of the homepage/front page. Edit ```assets/scripts/home.js```
-
 * **core.min.js** Loaded in the footer of every page. Edit ```assets/scripts/core.js```
 
 ### Enqueuing
