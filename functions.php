@@ -1,6 +1,6 @@
 <?php 
 
-define( 'THEME_VERSION', 0.1 );
+define( 'THEME_VERSION', 0.2 );
 
 
 /**
@@ -12,9 +12,10 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 function theme_scripts() {
   // We're loading jQuery in with the vendor.js, so stop WP from including it twice
   wp_deregister_script( 'jquery' );
+  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/scripts/min/jquery.min.js', false, '1.11.0', false );
 
   // Enqueue the vendor scripts (jQuery, Foundation etc.)
-  wp_enqueue_script( 'vendor-script', get_template_directory_uri() . '/assets/scripts/min/vendor.min.js', false, THEME_VERSION, false );
+  wp_enqueue_script( 'vendor-script', get_template_directory_uri() . '/assets/scripts/min/vendor.min.js', array( 'jquery' ), THEME_VERSION, true );
 
   // Enqueue home-specific js
   if ( is_home() || is_front_page() ) {

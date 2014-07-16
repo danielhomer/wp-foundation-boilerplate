@@ -25,9 +25,9 @@ module.exports = function(grunt) {
       },
       production: {
         files: {
+          'assets/scripts/min/jquery.min.js' : 'bower_components/jquery/dist/jquery.js',
           'assets/scripts/min/vendor.min.js' : [
           'bower_components/modernizr/modernizr.js',
-          'bower_components/jquery/dist/jquery.js',
           'bower_components/jquery.cookie/jquery.cookie.js',
           'bower_components/jquery-placeholder/jquery.placeholder.js',
           'bower_components/fastclick/lib/fastclick.js',
